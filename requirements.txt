@@ -1,0 +1,10 @@
+setuptools
+numpy
+scipy
+statsmodels
+soundfile
+resampy
+tqdm
+numba
+click
+runez
