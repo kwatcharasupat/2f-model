@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seabass-2f"
+version = "0.1.0"
+description = "Python implementation of the 2f-model for estimating subjective quality of separated audio signals"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+authors = [
+    { name = "Karn Watcharasupat" },
+]
+keywords = ["audio", "source-separation", "mushra", "quality-estimation", "2f-model"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "statsmodels",
+    "soundfile",
+    "resampy",
+    "tqdm",
+    "numba",
+    "click",
+    "runez",
+]
+
+[project.scripts]
+seabass = "seabass.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/kwatcharasupat/2f-model"
+Repository = "https://github.com/kwatcharasupat/2f-model"
+
+[tool.setuptools.packages.find]
+where = ["src"]
