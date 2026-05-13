@@ -4,6 +4,10 @@
 
 # Seabass - Python Implementation of the 2f Model
 
+[![PyPI version](https://img.shields.io/pypi/v/seabass-2f)](https://pypi.org/project/seabass-2f/)
+[![Python versions](https://img.shields.io/pypi/pyversions/seabass-2f)](https://pypi.org/project/seabass-2f/)
+[![License](https://img.shields.io/pypi/l/seabass-2f)](https://github.com/kwatcharasupat/2f-model/blob/main/LICENSE)
+
 Seabass is a Python implementation of the **2f-model** developed by the Internaltional Audio Laboratories Erlangen.
 It is a model for estimating subjective quality of separated audio source signals, specifically the mean MUSHRA score. 
 The part of this code, particularly the computation of the Model Output Variables are based on the MATLAB implementation, 
@@ -13,7 +17,12 @@ See [here](https://www.audiolabs-erlangen.de/resources/2019-WASPAA-SEBASS) for m
 ## Installation
 
 ```shell
-git clone this-repository
+pip install seabass-2f
+```
+
+For development:
+```shell
+git clone https://github.com/kwatcharasupat/2f-model.git
 cd 2f-model
 pip install -e .
 ```
